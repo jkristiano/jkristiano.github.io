@@ -21,15 +21,7 @@ html,body {
   -moz-text-size-adjust: none;
   -ms-text-size-adjust: none;
 }
-.header {
-    position: sticky;
-    top: 0;
-}
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
+.content {overflow: auto;}
 </style>
 </head>
 
@@ -67,6 +59,7 @@ Email: jkristiano[at]resceu.s.u-tokyo.ac.jp
 <hr>
 
 </div>
+<div class="content">
 
 <a name="research">
 <h2 class="tit">Research</h2>
@@ -454,21 +447,8 @@ The 8th International Conference on Quark and Nuclear Physics (QNP), Tsukuba, Ja
 
 
 <p>Last updated: March 2023</p>
-
-<script>
-window.onscroll = function() {myFunction()};
-
-var header = document.getElementById("myHeader");
-var sticky = header.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
-</script>
+    
+</div>
 
 </body>
 </html>
